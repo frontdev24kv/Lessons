@@ -1,1 +1,1 @@
-# Lessons
+# Beetroot Academy Frontend course
