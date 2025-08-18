@@ -41,6 +41,7 @@ ol {
 }
 .menu__link:hover {
   color: #070707;
+  font-weight: 600;
 }
 
 .main-title {
@@ -145,6 +146,13 @@ ol {
   justify-content: space-between;
   width: 310px;
   margin: 0 auto 60px;
+}
+
+.social {
+  transition: all 0.1s ease-in;
+}
+.social:hover {
+  opacity: 0.5;
 }
 footer small {
   color: #828282;
