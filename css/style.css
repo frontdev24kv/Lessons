@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./vars.css');
+
+html,
+body {
+  background-color: #3b3f45;
+  font-family: 'Roboto', sans-serif;
+  font-size: var(--main-font-size);
+  font-weight: var(--main-font-weight);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+input[type='checkbox'],
+.menu__text {
+  display: inline-block;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.container {
+  padding: 0 30px;
+  max-width: 1200;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #4a4f56;
+  color: #ff8984;
+  text-align: center;
+  padding: 20px 0 35px;
+}
+
+.header__title {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.header__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.section {
+  max-width: 534px;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+
+.menu__text {
+  margin-left: 16px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.menu__text > small {
+  font-size: 12px;
+  margin-left: 3px;
+}
+
+.menu__item {
+  padding: 12px 0;
+  background-color: #88839e;
+  color: #fff;
+}
+
+.menu__item:has(input[type='checkbox']:checked) {
+  background-color: #7a7593;
+}
+
+
+input[type='checkbox'] {
+  margin-left: 12px;
+  width: 19px;
+  height: 19px;
+  padding: 12px 0 14px;
+}
+
+input[type='checkbox']:checked + .menu__text {
+  text-decoration: line-through;
+  color: #9b96ac;
+}
+
+.menu__item:hover {
+  background-color: #625e77;
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 9px 0;
+}
+
+.footer {
+  text-align: center;
+  margin: 45px 0;
+}
+.footer__text {
+  max-width: 534px;
+  padding: 12px 0;
+  background-color: #4a4f56;
+  color: #ff8984;
+  margin: 0 auto;
+}
