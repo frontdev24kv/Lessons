@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('./normalize.css');
+@import url('./vars.css');
+
+html,
+body {
+  font-size: var(--main-font-size);
+  background: var(--background-page);
+  font-family: 'Montserrat', sans-serif;
+  color: var(--main-color);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  color: var(--text-color);
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.title {
+  font-size: 36px;
+  font-weight: 700;
+}
+.logo-img {
+  width: 200px;
+  height: 32px;
+}
+.header {
+  padding: 17px 0;
+  margin-bottom: 70px;
+}
+
+.header__box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav__list {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav__link {
+  color: var(--main-color);
+  transition: 0.2s;
+}
+
+.nav__link:hover {
+  color: orange;
+}
+
+.header__buttons {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+.btn {
+  font-weight: 600;
+  padding: 13px 26px;
+  border-radius: 4px;
+}
+
+.signin-btn {
+  border: 1px solid #bcd0e5;
+  color: black;
+  background-color: inherit;
+}
+
+.signup-btn {
+  color: white;
+  border: 1px solid orange;
+  background-color: orange;
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
+/* ---- main section ---- */
+
+.first_screen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 56px;
+}
+.left_side {
+  max-width: 500px;
+}
+
+.left_side h1 {
+  font-size: 44px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.left_side p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #544837;
+  margin-bottom: 20px;
+}
+.left_side button {
+  background-color: orange;
+  color: white;
+  font-size: var(--main-font-size);
+  font-weight: 700;
+  padding: 13px 44px;
+  border: 0;
+}
+.section {
+  margin-bottom: 100px;
+}
+
+/* ------- features ---- */
+.features {
+  background: linear-gradient(to top, #ffe5d2, #fff4e5);
+  border-bottom-left-radius: 50%;
+  border-bottom-right-radius: 50%;
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.features h3 {
+  font-weight: 600;
+  font-size: 22px;
+  margin: 30px 0 16px;
+}
+.features p {
+  line-height: 1.6;
+  margin-bottom: 0;
+}
+
+.features__container {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.feature-btn-box {
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.feature-btn-box button {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  background-color: orange;
+  font-weight: 700;
+  font-size: var(--main-font-size);
+  padding: 13px 40px;
+}
+
+/* ----benefits -------- */
+
+.benefits-container {
+  display: flex;
+  gap: 113px;
+}
+
+.benefits-left_side {
+  margin: 21px 0;
+}
+.benefits-left_side p {
+  font-weight: 500;
+  line-height: 1.6;
+}
+.benefits-left_side p:first-child {
+  margin: 0;
+}
+.benefits-left_side p:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+.benefits-left_side h2 {
+  margin: 0 0 20px;
+}
+.benefits-left_side h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+.benefits-left_side__box:not(:last-child) {
+  margin-bottom: 30px;
+}
+.benefits-left_side__box:last-child {
+  margin-bottom: 0;
+}
+.benefits-left_side__box p {
+  margin: 0;
+}
+
+/*  ----managers section ----- */
+.managers-container {
+  display: flex;
+  gap: 125px;
+}
+.managers-right_side {
+  margin: 48px 0;
+}
+.managers-right_side p:first-child {
+  margin: 0;
+}
+.managers-right_side h2 {
+  margin: 0 0 20px;
+}
+.managers-right_side p:nth-of-type(2) {
+  margin-bottom: 40px;
+}
+.managers-list {
+  margin-bottom: 0;
+}
+.managers-list_item {
+  display: flex;
+  gap: 30px;
+}
+
+/*  ---- marketers ---- */
+
+.marketers-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*  --- footer ----- */
+.footer {
+  padding-bottom: 70px;
+}
+.footer-wrapper {
+  display: flex;
+  gap: 135px;
+}
+
+.stuff ul li p {
+  width: 135px;
+  margin: 0;
+  padding: 0;
+}
+
+.stuff ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.gotham {
+  font-family: 'Gotham Rounded Book', serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: var(--main-color);
+  margin: 0;
+  padding: 0;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.signup input {
+  border: 1px solid #bcd0e5;
+  border-radius: 4px;
+  padding: 0px 10px;
+  width: 340px;
+  height: 50px;
+}
